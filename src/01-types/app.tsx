@@ -43,3 +43,31 @@ user.age = 29;
 user.isAdmin = true;
 
 user.phone = "+12345678";
+
+let userObj: {
+	username: string;
+	age: number;
+	isAdmin: boolean;
+	phone?: string; // not required
+};
+
+userObj = {
+	username: "John",
+	age: 23,
+};
+userObj = {
+	username: "John",
+	age: 23,
+	isAdmin: true,
+	phone: "+123456789",
+};
+
+//* ANY
+let testAny;
+testAny = 12;
+testAny = "hello";
+testAny = true;
+testAny = [true];
+testAny = {};
+
+let testAnyArray: any[];
